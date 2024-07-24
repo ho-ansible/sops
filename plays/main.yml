@@ -1,10 +1,9 @@
 #! /usr/bin/env ansible-playbook
 # Configure template role
-# Replace 'all' with your own inventory group
 ---
-- name: template | template role
-  hosts: all
+- name: sops | secrets management for k8s
+  hosts: sops
   roles:
-  - role: template
+  - role: sops
     tags:
-    - template
+    - sops

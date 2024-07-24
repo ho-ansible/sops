@@ -1,1 +1,11 @@
 ---
+
+- name: sops | install package from github
+  tags:
+  - package
+  - apt
+  ansible.builtin.apt:
+    deb: "https://github.com/{{ sops_repo }}/releases/download/v{{ sops_version }}/sops_{{ sops_version }}_amd64.deb"
+
+
+

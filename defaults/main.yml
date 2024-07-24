@@ -1,1 +1,2 @@
 ---
+sops_version: "{{ (lookup('url', sops_latest_url) | from_json).name | regex_replace('^v', '') }}"
