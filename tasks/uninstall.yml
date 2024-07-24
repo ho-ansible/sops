@@ -4,5 +4,7 @@
   tags:
   - package
   package:
-    name: sops
+    name: 
+    - sops
+    - "{{ sops_encrypter }}"
     state: absent

@@ -17,5 +17,4 @@ galaxy_info:
   - encryption
   - kubernetes
 
-dependencies:
-  - role: age
+dependencies: []
