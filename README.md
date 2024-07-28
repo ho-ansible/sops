@@ -1,6 +1,9 @@
 # Ansible role: sops
 Mozilla SOPS: management of kubernetes secrets
 
++ Create Age identity for use with SOPS: `age-keygen -o ~/.config/sops/age/keys.txt`
++ For use with flux, copy private key to a [secret](https://fluxcd.io/flux/guides/mozilla-sops/#encrypting-secrets-using-age)
+
 ## Requirements
 Only tested on Debian stable, for now.
 
